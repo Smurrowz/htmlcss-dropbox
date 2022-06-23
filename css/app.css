@@ -1,0 +1,79 @@
+/* reset e generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+}
+
+header li>a {
+  text-decoration: none;
+  color: black;
+
+}
+
+[class^=button-blue] {
+  background-color: #0061FF;
+  border: none;
+  color: white;
+}
+
+.button-blue-start {
+  padding: 10px 20px;
+}
+
+.container-lrg {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* debug */
+.debug {
+  border: 1px solid black;
+}
+
+/* header */
+.main-header {
+  justify-content: space-between;
+  padding: 20px;
+
+}
+
+.header-nav-1,
+.header-nav-2,
+.header-nav-menu-1,
+.header-nav-menu-2 {
+  gap: 30px;
+  align-items: center;
+}
+
+/* main */
+
+/* hero */
+.hero {
+  background-color:#B4D0E7 ;
+}
+.hero > h1{
+  font-size: 80px;
+  
+}
+/* sezione 1 */
+
+/* sezione 3 */
+
+/* sezione 4 */
