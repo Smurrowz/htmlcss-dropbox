@@ -41,7 +41,9 @@ header li>a {
   max-width: 1000px;
   margin: 0 auto;
 }
-
+img{
+  max-width: 100%;
+}
 /* debug */
 .debug {
   border: 1px solid black;
@@ -70,7 +72,28 @@ header li>a {
 }
 .hero > h1{
   font-size: 80px;
+  padding: 80px 0;
   
+}
+.hero-pt1{
+  flex-basis: 40%;
+}
+.hero-pt1.flex {
+flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+padding-bottom: 20px;
+
+}
+.hero-pt2{
+  position: relative;
+  flex-basis: 60%;
+}
+.hero-img{
+  position: absolute;
+  bottom: -30px;
+  top: 0;
+  left: 0;
 }
 /* sezione 1 */
 
