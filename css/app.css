@@ -41,9 +41,11 @@ header li>a {
   max-width: 1000px;
   margin: 0 auto;
 }
-img{
+
+img {
   max-width: 100%;
 }
+
 /* debug */
 .debug {
   border: 1px solid black;
@@ -68,35 +70,133 @@ img{
 
 /* hero */
 .hero {
-  background-color:#B4D0E7 ;
+  background-color: #B4D0E7;
 }
-.hero > h1{
+
+.hero>h1 {
   font-size: 80px;
   padding: 80px 0;
-  
-}
-.hero-pt1{
-  flex-basis: 40%;
-}
-.hero-pt1.flex {
-flex-direction: column;
-align-items: flex-start;
-gap: 30px;
-padding-bottom: 20px;
 
 }
-.hero-pt2{
-  position: relative;
-  flex-basis: 60%;
+
+.hero-pt1 {
+  flex-basis: calc(100% / 3);
 }
-.hero-img{
+
+.hero-pt1.flex {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding-bottom: 20px;
+
+}
+
+.hero-pt2 {
+  position: relative;
+  flex-basis: calc(100%/3 * 2);
+}
+
+.hero-img {
   position: absolute;
   bottom: -30px;
   top: 0;
   left: 0;
 }
-/* sezione 1 */
 
-/* sezione 3 */
+/* sezione 2 */
+.sect-2 {
+  padding-top: 150px;
+}
 
-/* sezione 4 */
+.sect-title {
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+
+.billing-choice {
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+
+/* sezione cards */
+
+.wrapper {
+  flex-wrap: wrap;
+}
+.col{
+  gap: 26px;
+  justify-content: space-between;
+}
+.col, .col-lrg{
+  display: flex;
+  margin-bottom: 0px;
+  }
+.card {
+  flex-direction: column;
+  width: calc(100% / 3);
+  padding-bottom: 52px;
+}
+.card-header {
+  text-align: center;
+  line-height: 32px;
+}
+
+.card-header,
+.card-content {
+  border: 1px solid #D0D0D3;
+}
+
+.card-content {
+  padding: 40px 30px;
+  height: 100%;
+}
+
+.payment-frequency {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.button-blue-card {
+  padding: 15px 35px;
+  margin-bottom: 35px;
+}
+.card-content > ul > li > svg{
+position: absolute;
+top: 2px;
+left: -10px;
+}
+.card-content > ul > li{
+  position: relative;
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+.card-content ul{
+  padding: 25px 0;
+}
+.card-content hr{
+  width: calc(100% / 6);
+  margin-bottom:52px ;
+}
+.col-lrg{
+  flex-direction: column;
+  width: 100%;
+}
+.col-70{
+  flex-basis: 70%;
+}
+.col-30{
+  flex-basis: 30%;
+}
+.card-content h3{
+  margin-bottom:30px ;
+}
+.card-content h5{
+  margin-bottom:20px ;
+}
+.buy-option{
+  margin-bottom: 35px;
+}
+.buy-option a{
+  color: blue;
+}
