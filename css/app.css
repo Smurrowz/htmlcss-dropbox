@@ -240,7 +240,9 @@ left: -10px;
   flex-basis: 50%;
   aspect-ratio: 1 / 1;
   align-items: center;
-  justify-content: center;   
+  justify-content: center;
+  
+    
 }
 .bkg-green{
   background-color:#A2D39B ; 
