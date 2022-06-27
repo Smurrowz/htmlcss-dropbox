@@ -6,22 +6,46 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 
-.flex {
-  display: flex;
-}
-
 ul,
 ol,
 menu {
   list-style: none;
 }
-
-header li>a {
-  text-decoration: none;
-  color: black;
-
+.flex {
+  display: flex;
+}
+.container-lrg {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.wrapper {
+  flex-wrap: wrap;
+}
+section{
+  padding-top: 150px;
+  
+}
+img {
+  max-width: 100%;
+}
+.row{
+  margin-left: -30px;
+}
+.company-quote::before, .subscription-title::before, .info::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: calc(100% / 6);
+  background-color: #d5d5d7;
+  margin-bottom: 52px;
 }
 
+
+/* buttons */
 [class^=button-blue] {
   background-color: #0061FF;
   border: none;
@@ -31,26 +55,19 @@ header li>a {
 .button-blue-start {
   padding: 10px 15px;
 }
-
-.container-lrg {
-  max-width: 1200px;
-  margin: 0 auto;
+.button-blue-card {
+  padding: 15px 35px;
+  margin-bottom: 35px;
+}
+.button-white{
+  border: 1px solid black;
+}
+[class^=button-white] {
+  padding: 10px 15px;
+  background-color: white;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-section{
-  padding-top: 150px;
 
-}
-img {
-  max-width: 100%;
-}
-.row{
-  margin-left: -30px;
-}
 /* debug */
 .debug {
   border: 1px solid black;
@@ -60,7 +77,12 @@ img {
 .main-header {
   justify-content: space-between;
   padding: 20px;
-
+  
+}
+header li>a {
+  text-decoration: none;
+  color: black;
+  
 }
 
 .header-nav-1,
@@ -109,7 +131,7 @@ img {
   left: 0;
 }
 
-/* sezione 2 */
+/* sezione 2 con con i pani business */
 
 .sect-title {
   font-size: 40px;
@@ -125,9 +147,6 @@ img {
 
 /* sezione cards */
 
-.wrapper {
-  flex-wrap: wrap;
-}
 .col{
   gap: 26px;
   justify-content: space-between;
@@ -160,10 +179,6 @@ img {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.button-blue-card {
-  padding: 15px 35px;
-  margin-bottom: 35px;
-}
 .card-content > ul > li > svg{
 position: absolute;
 top: 2px;
@@ -177,10 +192,8 @@ left: -10px;
 .card-content ul{
   padding: 25px 0;
 }
- hr {
-  width: calc(100% / 6);
-  margin-bottom:52px ;
-}
+
+
 .col-lrg{
   flex-direction: column;
   width: 100%;
@@ -205,11 +218,10 @@ left: -10px;
   color: blue;
 }
 
-/* sezione 3 */
+/* sezione 3 con img partner */
 .col-60{
   flex-basis: 60%;
 }
-
 .col-40{
   flex-basis: 40%;
   padding: 50px;
@@ -217,16 +229,8 @@ left: -10px;
 .col-40 > Button{
   margin-top: 35px ;
 }
-.button-white{
-  border: 1px solid black;
-}
 
-[class^=button-white] {
-  padding: 10px 15px;
-  background-color: white;
-}
-/* sezione 4 */
-/* sezione 5 */
+/* sezione 5 e carosello*/
 .col-33{
   flex-basis:calc(100% / 3);
   aspect-ratio: 1 / 1;
@@ -271,7 +275,7 @@ left: -10px;
   border: 15px solid #FFD830 ;
 }
 .col-33 .col-50 img{
-  width: 160px;
+  width: 50%;
   filter: invert(1);
 }
 
@@ -299,6 +303,9 @@ padding: 50px 50px;
   align-items: center;
 }
 
+.company-quote address{
+  font-style: normal;
+}
 .button-white-no-bord{
 border: none;
 padding: 15px 0 ;
@@ -310,7 +317,7 @@ width: 100%;
   font-size: 40px;
 }
 
-/* sezione 7 */
+/* FAQ */
 
 .faq li{
   line-height: 100px;
@@ -335,16 +342,21 @@ footer{
 }
 .foot-col > h4{
 margin-bottom:40px ;
+}
 
+.foot-list{
+  padding: 110px 0;
 }
 footer li a{
   color: white;
   text-decoration: none;
+  line-height: 30px;
 }
 .foot-col{
   flex-basis: 20%;
-  padding: 110px 0;
 }
+
+/* footer pt2 */
 .lang-selector{
 background-color: black;
 color: #999999;
